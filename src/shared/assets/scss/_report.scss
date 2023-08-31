@@ -1,0 +1,66 @@
+main {
+    width: 100%;
+}
+.section-report {
+    padding: 50px 0 0;
+    h3 {
+        font-family: 'NT Somic Medium';
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: 500;
+        margin: 0 0 5px;
+    }
+    h2 {
+        font-family: 'NT Somic Bold';
+        font-size: 72px;
+        line-height: 1.1;
+        font-weight: bold;
+        margin: 0 0 30px;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 32px;
+    }
+    .conatiner-carousel {
+        text-align: center;
+        padding: 20px 0 0;
+        .flexslider {
+            .slides li .content-item {
+                padding: 0 20px;
+                text-align: center;
+                display: flex;
+                min-height: 100px;
+                img {
+                    margin: auto;
+                    display: block;
+                    border-radius: 0;
+                    width: auto;
+                    max-width: 100%;
+                }
+            }
+            &:hover .flex-direction-nav {
+                .flex-prev {
+                    left: 0 !important;
+                }
+                .flex-next {
+                    right: 0 !important;
+                }
+            }
+        }
+        ul.flex-direction-nav {
+            font-size: 0;
+            li {
+                margin-right: 0;
+                a:before {
+                    line-height: 41px ;
+                    font-size: 25px;
+                }
+            }
+            
+        }
+        ol.flex-control-nav {
+            display: none;
+        }
+    }
+}

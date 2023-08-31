@@ -1,0 +1,39 @@
+header {
+    width: 100%;
+    .content-logo {
+        display: inline-block;
+        .logo {
+            max-width: 100%;
+            width: 224px;
+            height: auto;
+            padding: 0;
+        }
+    }
+    
+    .navbar, .navbar-expand-lg .navbar-collapse {
+        justify-content: flex-end;
+        a {
+            color: #000;
+        }
+    }
+
+    
+}
+
+/* Responsive
+============================================================ */
+@media (max-width:1200px) {
+
+}
+
+@media (max-width:990px) {
+  
+}
+
+@media (max-width:767px) {
+  
+}
+
+@media (max-width:478px) {
+  
+}
