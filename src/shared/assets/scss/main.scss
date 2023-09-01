@@ -11,7 +11,7 @@
 @import 'modal';
 @import 'font';
 @import 'footer';
-
+@import 'latest';
 /* General Classes
 ============================================================ */
 a {
@@ -97,6 +97,9 @@ html:after {
 /* #Site Styles
 ================================================== */
 body {
+  &.home {
+    background-color: #fff;
+  }
   background-color: #fcfbfa;
   color: #000000;
   font-family: 'NT Somic Regular';
@@ -229,6 +232,25 @@ section.section404-500 {
 }
 
 @media (max-width: 767px) {
-  
-  
+}
+main.index {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+button,
+input {
+  // padding: 0 !important;
+  // background: none !important;
+  border: none !important;
+  // border-radius: 0 !important;
+  outline: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }

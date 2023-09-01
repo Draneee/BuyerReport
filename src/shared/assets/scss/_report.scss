@@ -3,6 +3,11 @@ main {
 }
 .section-report {
   padding: 50px 0 0;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
   h3 {
     font-family: 'NT Somic Medium';
     font-size: 20px;
@@ -22,13 +27,15 @@ main {
     height: auto;
     border-radius: 32px;
   }
+
   .conatiner-carousel {
     .carousel {
       overflow: hidden;
       ul {
         display: flex;
-        gap: 60px;
-        animation: carouselAnimation 10s linear infinite;
+        white-space: nowrap;
+        gap: 90px;
+        animation: carouselAnimation 20s linear infinite;
         li {
           border-radius: 0px;
           max-height: 35px;
@@ -36,17 +43,20 @@ main {
             width: auto;
             border-radius: 0px;
           }
+          &:after {
+            content: '';
+            flex: 0 0 60px;
+          }
         }
       }
     }
   }
-}
-
-@keyframes carouselAnimation {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
+  @keyframes carouselAnimation {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(calc(-100% - 105px));
+    }
   }
 }
