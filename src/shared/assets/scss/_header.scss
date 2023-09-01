@@ -43,6 +43,17 @@ header {
   }
 }
 
+.offcanvas-body{
+  ul{
+    li{
+      a{
+        padding: 5px 0;
+        font-family: 'NT Somic Medium';
+      }
+    }
+  }
+}
+
 /* Responsive
 ============================================================ */
 @media (max-width:1200px) {
