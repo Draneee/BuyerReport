@@ -22,18 +22,22 @@ footer{
       display: flex;
       a{
         display: flex;
-        font-family: 'NT Somic Medium';
+        font-family: "NT Somic Medium";
         padding: 0 10px;
         line-height: 17px;
         text-align: center;
+        font-size: 14px;
+        text-decoration: none;
       }
     }
     a{
       color: #000000;
       display: block;
+      font-size: 14px;
       line-height: 20px;
       transition: linear all 0.2s;
       padding: 1px 0;
+      text-decoration: none;
       &:hover{
         color: #5B31DD;
         font-family: 'NT Somic Medium';

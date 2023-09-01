@@ -1,9 +1,6 @@
-@import 'bootstrap/dist/css/bootstrap.css';
-@import 'flexslider';
 @import 'header';
 @import 'banner';
 @import 'buyer';
-@import 'products';
 @import 'report';
 @import 'subscribe';
 @import 'buttons';
@@ -39,6 +36,9 @@ html:after {
   visibility: hidden;
 }
 
+a{
+  text-decoration: none !important;
+}
 .onlymobile {
   display: none;
 }

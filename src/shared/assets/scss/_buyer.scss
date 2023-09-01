@@ -1,22 +1,20 @@
 .section-buyer {
   padding: 50px 0;
   h3 {
-      font-family: 'NT Somic Bold';
-      font-size: 16px;
-      line-height: 1.1;
-      font-weight: 500;
-      margin: 0 0 5px;
-      color: #716E76;
+    font-size: 16px;
+    line-height: 1.1;
+    font-weight: 500;
+    margin: 0 0 5px;
+    color: #716E76;
   }
   h2 {
-      font-family: 'NT Somic Bold';
-      font-size: 38px;
-      line-height: 1.1;
-      font-weight: 500;
-      margin: 0 0 10px;
+    font-family: 'NT Somic Medium';
+    font-size: 38px;
+    line-height: 1.1;
+    font-weight: 500;
+    margin: 0 0 10px;
   }
   p {
-    font-family: 'NT Somic Medium';
     font-size: 22px;
     line-height: 1.4;
     font-weight: 500;
@@ -43,7 +41,29 @@
 }
 
 @media (max-width:767px) {
-  
+  .section-buyer {
+    padding: 10px 0;
+    h2{
+      font-size: 30px;
+    }
+    .m-t-50 {
+      margin-top: 20px;
+      justify-content: center;
+    }
+    p{
+      font-size: 17px;
+      line-height: 22px;
+    }
+  }
+  main.index {
+    gap: 20px;
+  }
+  section.section-report{
+    padding: 0;
+    h2{
+      font-size: 47px;
+    }
+  }
 }
 
 @media (max-width:650px) {

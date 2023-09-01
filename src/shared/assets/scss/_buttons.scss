@@ -9,6 +9,13 @@
 	&.block{
 		display: block;
 	}
+	&.small{
+		font-size: 14px;
+		height: 30px;
+		line-height: 30px;
+		padding: 0px 10px;
+    letter-spacing: -0.15px;
+	}
 	&.medium{
 		font-size: 14px;
 		height: 50px;

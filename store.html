@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="src/shared/assets/css/main.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Buyers Report</title>
   </head>
   <body>
     <header>
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-6 text-left">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 text-left d-flex gap-3">
             <a class="content-logo" href="#">
               <img
                 src="./src/shared/assets/img/logo.svg"
@@ -20,24 +21,44 @@
               />
             </a>
           </div>
-          <div class="col-6">
-            <ul class="menu d-none d-md-block">
-              <li><a href="#">Categories</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Help</a></li>
-            </ul>
-            <a
-              class="d-sm-block d-md-none menumobile"
-              href="#menuMobile"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-              aria-label="Toggle navigation"
-              ><i class="icon-burger"></i
-            ></a>
+          <div class="col-lg-9 col-md-8 d-none d-md-block">
+            <div class="d-flex justify-content-between">
+              <div class="subscribe input">
+                <span class="search">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.2825 14.2176L12.5001 11.4576C13.5801 10.1109 14.1032 8.40152 13.9617 6.68103C13.8201 4.96053 13.0248 3.35964 11.7392 2.20753C10.4536 1.05543 8.77541 0.439683 7.04974 0.486903C5.32408 0.534124 3.68209 1.24072 2.46141 2.46141C1.24072 3.68209 0.534124 5.32408 0.486903 7.04974C0.439683 8.77541 1.05543 10.4536 2.20753 11.7392C3.35964 13.0248 4.96053 13.8201 6.68103 13.9617C8.40152 14.1032 10.1109 13.5801 11.4576 12.5001L14.2176 15.2601C14.2873 15.3303 14.3702 15.3861 14.4616 15.4242C14.553 15.4623 14.651 15.4819 14.7501 15.4819C14.8491 15.4819 14.9471 15.4623 15.0385 15.4242C15.1299 15.3861 15.2128 15.3303 15.2825 15.2601C15.4177 15.1202 15.4933 14.9333 15.4933 14.7388C15.4933 14.5443 15.4177 14.3574 15.2825 14.2176V14.2176ZM7.25005 12.5001C6.2117 12.5001 5.19666 12.1921 4.33331 11.6153C3.46995 11.0384 2.79704 10.2185 2.39968 9.25914C2.00232 8.29983 1.89836 7.24423 2.10093 6.22583C2.3035 5.20743 2.80351 4.27197 3.53774 3.53774C4.27197 2.80351 5.20743 2.3035 6.22583 2.10093C7.24423 1.89836 8.29983 2.00232 9.25914 2.39968C10.2185 2.79704 11.0384 3.46995 11.6153 4.33331C12.1921 5.19666 12.5001 6.2117 12.5001 7.25005C12.5001 8.64244 11.9469 9.97779 10.9624 10.9624C9.97779 11.9469 8.64244 12.5001 7.25005 12.5001V12.5001Z"
+                      fill="black"
+                    />
+                  </svg>
+                </span>
+                <input type="text" placeholder="Search" />
+              </div>
+              <ul class="menu">
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Help</a></li>
+              </ul>
+            </div>
+            
           </div>
         </div>
       </div>
+      <a
+        class="d-sm-block d-md-none menumobile"
+        href="#menuMobile"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+        aria-label="Toggle navigation"
+        ><i class="icon-burger"></i
+      ></a>
     </header>
 
     <div
@@ -73,7 +94,7 @@
       <div class="container">
         <div class="contHeader">
           <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-7">
               <nav class="navigation">
                 <a href="#">Home</a>
                 <a href="#">Health & Household</a>
@@ -86,6 +107,28 @@
                 recommendations help you find the automatic robot vacuum that's
                 right for you.
               </p>
+            </div>
+            <div class="col-md-5 d-flex justify-content-end align-items-end">
+              <div class="d-flex ">
+                <div class="sortby">
+                  <label>Sort by</label>
+                  <select class="form-select form-select-xs" aria-label=".form-select-sm example">
+                    <option selected></option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="advertisingLink">
+                  <a href="#" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="<p>This site is a free online resource 
+                  that strives to offer helpful content and comparison features to its visitors. Please be advised that the 
+                  operator of this site accepts advertising compensation from companies that appear on the site, and such compensation 
+                  impacts the location and order in which the companies (and/or their products).</p><a
+                  href='#'' class='button small primary' >GOT IT</a>">Advertising Disclosure 
+                  <img src="src/shared/assets/img/arrow-bottom.svg"
+                    /></a>  
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1068,5 +1111,13 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl, {
+          'customClass': 'custom-tooltip',
+        })
+      })
+    </script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 .section-subscribe {
   padding: 50px 0;
   h3 {
-    font-family: 'NT Somic Bold';
+    font-family: 'NT Somic Medium';
     font-size: 16px;
     line-height: 1.1;
     font-weight: 500;
@@ -9,7 +9,7 @@
     color: #716e76;
   }
   h2 {
-    font-family: 'NT Somic Bold';
+    font-family: 'NT Somic Medium';
     font-size: 38px;
     line-height: 1.1;
     font-weight: 500;
@@ -66,6 +66,12 @@
 }
 
 @media (max-width: 767px) {
+  .section-subscribe{
+    padding: 0 0 30px 0;
+    h2 {
+      font-size: 27px;
+    }
+  }
 }
 
 @media (max-width: 650px) {

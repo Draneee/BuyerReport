@@ -70,7 +70,7 @@
           gap: 20px;
           padding: 20px;
           width: 420px;
-          height: 500px;
+          height: 480px;
           border-radius: 32px;
           background-color: rgba(241, 239, 233, 0.35);
           backdrop-filter: blur(62px);
@@ -135,6 +135,16 @@ span.search {
 }
 
 @media (max-width: 767px) {
+  .section-store .container {
+    gap: 25px;
+    .header .titles-section h2{
+      font-size: 40px;
+    }
+    .carousel.products ul li{
+      height: auto;
+      padding-bottom: 30px;
+    }
+  }
   .row.align-items-center.buyer-report {
     flex-direction: column-reverse;
   }
