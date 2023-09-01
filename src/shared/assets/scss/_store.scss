@@ -1,4 +1,3 @@
-
 .ribbon {
   background-color: #5B31DD;
   color: #FFFFFF;
@@ -29,7 +28,7 @@
   display: block;
   float: left;
   overflow: hidden;
-  padding-top: 10px;
+  padding-top: 4px;
   span{
     display: block;
     float: left;
@@ -52,8 +51,51 @@
   }
 }
 
+.contHeader{
+  nav.navigation{
+    display: flex;
+    margin-bottom: 20px;
+    a{
+      display: flex;
+      padding-right: 15px;
+      margin-right: 15px;
+      color: #716E76;
+      font-size: 15px;
+      position: relative;
+      &:after{
+        content: "✦";
+        position: absolute;
+        right: -5px;
+        top: 0;
+      }
+      &:last-child{
+        &:after{
+          display: none;
+        }
+      }
+    }
+  }
+  h2{
+    color: #000000;
+    font-size: 40px;
+    font-family: "NT Somic Medium";
+    letter-spacing: -1.5px;
+    span{
+      font-family: "NT Somic regular";
+    }
+    + p{
+      color: #5E5C62;
+      font-size: 16px;
+      margin-bottom: 30px;
+      span{
+        text-decoration: underline;
+      }
+    }
+  }
+}
 
 section.sectionstore{
+  padding: 40px 0;
   .cardstores{
     .item{
       background-color: #FFFFFF;
@@ -61,16 +103,42 @@ section.sectionstore{
       border-radius: 22px;
       box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.08);
       position: relative;
+      margin-bottom: 20px;
+      &.best{
+        border: 2px solid #FF8D00
+      }
+      &:last-child{
+        margin-bottom: 0;
+      }
+      span.itemNumber{
+        background-color: #fff;
+        border-radius: 100%;
+        display: block;
+        height: 40px;
+        line-height: 37px;
+        width: 40px;
+        border: 2px solid #000;
+        position: absolute;
+        top: 50%;
+        margin-top: -20px;
+        left: -20px;
+        color: #000;
+        font-family: "NT Somic Medium";
+        text-align: center;
+        z-index: 1;
+        font-size: 13px;
+      }
       div.img{
-        padding-top: 40px;
+        display: flex;
         position: absolute;
         top: 0;
         left: 10px;
-        height: 194px;
+        height: 100%;
         text-align: center;
         width: 170px;
         span.img{
           display: block;
+          margin-bottom: 5px;
           img{
             max-width: 100%;
           }
@@ -93,27 +161,52 @@ section.sectionstore{
           h3{
             display: block;
             float: left;
-            border-right: 1px solid #000000;
-            padding-right: 10px;
             margin-right: 10px;
             margin-bottom: 0;
             a{
               color: #000;
-              font-size: 26px;
+              display: block;
+              font-size: 22px;
               font-family: "NT Somic Medium";
-              line-height: 26px;
+              line-height: 24px;
             }
           }
         }
-        ul{
+        ul.list{
           padding: 0;
           margin-bottom: 15px;
           li{
             color: #000000;
-            font-size: 16px;
-            line-height: 20px;
+            font-size: 15px;
+            line-height: 25px;
             list-style: none;
-            margin-bottom: 5px;
+            margin-bottom: 4px;
+            position: relative;
+            padding-left: 35px;
+            &:after{
+              background-color: #F1EFE9;
+              content: '';
+              border-radius: 100%;
+              height: 25px;
+              color: #000000;
+              line-height: 20px;
+              text-align: center;
+              position: absolute;
+              top: 0;
+              left: -0px;
+              width: 25px;
+            }
+            &:before{
+              font-family: "icomoon";
+              content: "";
+              position: absolute;
+              top: 0px;
+              font-size: 6px;
+              left: 7px;
+              color: #000;
+              line-height: 25px;
+              z-index: 1;
+            }
           }
         }
         .more{
@@ -127,11 +220,15 @@ section.sectionstore{
       .actions{
         text-align: center;
         position: absolute;
+        display: flex;
         padding: 20px 10px;
         right: 0;
         top: 0;
         bottom: 0;
         width: 25%;
+        > div{
+          
+        }
         .linksave{
           color: #7B61FF;
           display: inline-block;
@@ -220,7 +317,7 @@ section.sectionstore{
 }
 
 section.guide{
-  padding: 20px 0;
+  padding: 0 0 20px 0;
   h2{
     font-family: 'NT Somic Medium';
     font-size: 35px;

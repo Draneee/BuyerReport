@@ -1,23 +1,26 @@
 header {
-    width: 100%;
-    .content-logo {
-        display: inline-block;
-        .logo {
-            max-width: 100%;
-            width: 224px;
-            height: auto;
-            padding: 0;
-        }
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.08);
+  padding: 8px 0;
+  width: 100%;
+  .content-logo {
+    display: inline-block;
+    .logo {
+      max-width: 100%;
+      width: 224px;
+      height: auto;
+      padding: 0;
     }
-    
-    .navbar, .navbar-expand-lg .navbar-collapse {
-        justify-content: flex-end;
-        a {
-            color: #000;
-        }
+  }
+  
+  .navbar, .navbar-expand-lg .navbar-collapse {
+    background-color: #FFFFFF;
+    justify-content: flex-end;
+    a {
+      color: #000000;
+      font-family: 'NT Somic Medium';
     }
-
-    
+  }
 }
 
 /* Responsive
