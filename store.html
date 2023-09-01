@@ -8,7 +8,6 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
     <header>
       <div class="container">
           <div class="row align-items-center">
@@ -17,29 +16,40 @@
                 <img src="./src/shared/assets/img/logo.svg" alt="Logo" class="logo">
               </a>
             </div>
-            <div class="col-6 text-right">
-              <nav class="navbar navbar-expand-lg navbar-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Categories</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Help</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
+            <div class="col-6 justify-content-end">
+              <ul class="menu justify-content-center onlydesktop">
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Help</a></li>
+              </ul>
+              <a href="#" data-bs-toggle="offcanvas" href="#menuMobile" role="button" aria-controls="menuMobile" class="onlymobile menumobile"><i class="icon-burger"></i></a>
             </div>
           </div>
       </div>
     </header>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="menuMobile" aria-labelledby="menuMobile">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+        </div>
+        <div class="dropdown mt-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <section class="sectionstore">
       <div class="container">
         <div class="contHeader">

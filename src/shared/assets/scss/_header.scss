@@ -13,13 +13,20 @@ header {
     }
   }
   
-  .navbar, .navbar-expand-lg .navbar-collapse {
+  ul.menu {
     background-color: #FFFFFF;
-    justify-content: flex-end;
-    a {
-      color: #000000;
-      font-family: 'NT Somic Medium';
+    li{
+      list-style: none;
+      display: flex;
+      a {
+        color: #000000;
+        font-family: 'NT Somic Medium';
+      }
     }
+  }
+  .menumobile{
+    display: block;
+    float: right;
   }
 }
 
