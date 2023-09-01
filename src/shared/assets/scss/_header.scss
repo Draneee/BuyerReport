@@ -15,18 +15,31 @@ header {
   
   ul.menu {
     background-color: #FFFFFF;
+    float: right;
+    margin-bottom: 0;
     li{
       list-style: none;
-      display: flex;
+      display: block;
+      float: left;
+      margin-right: 5px;
       a {
         color: #000000;
         font-family: 'NT Somic Medium';
+        padding: 0 10px;
+      }
+      &:last-child{
+        margin-right: 0;
+        a{
+          padding-right: 0;
+        }
       }
     }
   }
   .menumobile{
     display: block;
     float: right;
+    position: relative;
+    top: 1px;
   }
 }
 
