@@ -31,30 +31,30 @@
     height: auto;
     border-radius: 32px;
   }
-  .subscribe.input {
-    justify-content: center;
+}
+.subscribe.input {
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+  input {
+    max-width: 200px;
+    border-radius: 18px;
+    font-family: 'NT Somic Medium';
+    background: #f1efe9;
+    max-height: 36px;
+    padding: 10px 0px 10px 15px;
+    font-size: 13px;
+    letter-spacing: -0.13px;
+  }
+  button {
     display: flex;
-    gap: 10px;
-    input {
-      max-width: 200px;
-      border-radius: 18px;
-      font-family: 'NT Somic Medium';
-      background: #f1efe9;
-      max-height: 36px;
-      padding: 10px 0px 10px 15px;
-      font-size: 13px;
-      letter-spacing: -0.13px;
-    }
-    button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 999px;
-      width: 36px;
-      height: 36px;
-      padding: 0px;
-      background-color: black;
-    }
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    width: 36px;
+    height: 36px;
+    padding: 0px;
+    background-color: black;
   }
 }
 /* Responsive

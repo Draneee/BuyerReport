@@ -58,6 +58,7 @@
         }
       }
     }
+
     .carousel.products {
       ul {
         display: flex;
@@ -99,6 +100,16 @@
       }
     }
   }
+}
+
+span.search {
+  cursor: pointer;
+  display: flex;
+  padding: 9px;
+  border-radius: 999px;
+  height: 36px;
+  width: 36px;
+  background: #f1efe9;
 }
 
 /* Responsive
