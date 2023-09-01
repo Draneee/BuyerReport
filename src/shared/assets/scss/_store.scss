@@ -374,11 +374,58 @@ section.guide{
 }
 
 @media (max-width:991px) {
-  
-}
-
-@media (max-width:767px) {
-  
+  section.sectionstore{
+    padding-bottom: 0px;
+    .cardstores{
+      .item{
+        margin-bottom: 20px !important;
+        span.itemNumber{
+          display: none;
+        }
+        div.img {
+          display: block;
+          position: relative;
+          top: 0;
+          left: 0;
+          height: auto;
+          text-align: center;
+          width: 100%;
+        }
+        .cont{
+          padding: 10px 10px 0 10px;
+          .more{
+            display: none;
+          }
+        }
+        .actions {
+          text-align: center;
+          position: relative;
+          display: block;
+          padding: 0 10px 15px 10px;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          width: 100%;
+          .linksave{
+            border-top: 1px solid #e2e0da;
+            display: block;
+            padding-top: 10px;
+          }
+          .logoBrand{
+            margin-bottom: 10px;
+          }
+          .picked{
+            margin-top: 0;
+            padding-top: 0;
+            border-top: none;
+          }
+        }
+      }
+    }
+  }
+  section.guide{
+    padding-bottom: 0;
+  }
 }
 
 @media (max-width:650px) {
