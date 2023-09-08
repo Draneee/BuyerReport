@@ -43,6 +43,20 @@ header {
       }
     }
   }
+  .subscribe.input{
+    position: relative;
+    .position-absolute{
+      top: 33px;
+      left: 46px;
+      .list-group-item{
+        font-size: 15px !important;
+      }
+      .text-info{
+        color: #5b31dd !important;
+        font-family: 'NT Somic Medium';
+      }
+    }
+  }
 }
 
 .menumobile{

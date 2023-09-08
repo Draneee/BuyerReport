@@ -38,7 +38,8 @@
                     />
                   </svg>
                 </span>
-                <input type="text" placeholder="Search" />
+                <input id="form1" type="text" placeholder="Search">
+                <div class="position-absolute invisible" id="form1_complete"></div>
               </div>
               <ul class="menu">
                 <li><a href="#">Categories</a></li>
@@ -1049,6 +1050,11 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script src="src/shared/assets/js/autocomplete.js"></script>
+    <script>
+      const autocompleteSearch = ['Ebay', 'Amazon', 'Walmart', 'Wayfair', 'Alfredo', 'Alfine'];
+      set_autocomplete('form1', 'form1_complete', autocompleteSearch, start_at_letters=1);
+    </script>
     <script>
       var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
       var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {

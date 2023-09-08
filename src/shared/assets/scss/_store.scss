@@ -28,7 +28,7 @@
   display: block;
   float: left;
   overflow: hidden;
-  padding-top: 4px;
+  padding-top: 1px;
   span {
     display: block;
     float: left;
@@ -45,8 +45,9 @@
     color: #f8b200;
     display: block;
     float: left;
-    font-size: 16px;
-    padding: 0 2px;
+    font-size: 18px;
+    padding: 0;
+    top: 2px;
     position: relative;
   }
 }
@@ -265,7 +266,7 @@ section.sectionstore {
               position: absolute;
               top: 0px;
               font-size: 6px;
-              left: 7px;
+              left: 8px;
               color: #000;
               line-height: 25px;
               z-index: 1;
